@@ -1,0 +1,31 @@
+
+t
+java:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃÊñÕûÿÿÿÿ
+n
+java:S2293U"YReplace the type specification in this constructor call with the diamond operator ("<>").(ôŸÁC
+o
+java:S2293l"YReplace the type specification in this constructor call with the diamond operator ("<>").(€§òž
+Y
+java:S1854"">Remove this useless assignment to local variable "titlesData".(ÃàÿÂÿÿÿÿÿ
+U
+java:S1854!"?Remove this useless assignment to local variable "chapterData".(„ˆ³—
+W
+java:S1854 "<Remove this useless assignment to local variable "viewData".(¿Î²£þÿÿÿÿ
+H
+java:S1481 "-Remove this unused "viewData" local variable.(¿Î²£þÿÿÿÿ
+F
+java:S1481!"0Remove this unused "chapterData" local variable.(„ˆ³—
+J
+java:S1481""/Remove this unused "titlesData" local variable.(ÃàÿÂÿÿÿÿÿ
+H
+java:S1135$"2Complete the task associated to this TODO comment.(Ù±—·
+c
+java:S57387"HRemove this call to a deprecated method, it has been marked for removal.(ÃÊñÕûÿÿÿÿ
+]
+java:S5738U"HRemove this call to a deprecated method, it has been marked for removal.(ôŸÁC
+]
+java:S5738U"HRemove this call to a deprecated method, it has been marked for removal.(ôŸÁC
+^
+java:S5738l"HRemove this call to a deprecated method, it has been marked for removal.(€§òž
+^
+java:S5738l"HRemove this call to a deprecated method, it has been marked for removal.(€§òž
