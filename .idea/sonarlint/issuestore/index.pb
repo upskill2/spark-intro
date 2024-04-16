@@ -18,3 +18,13 @@ o
 ?part1/src/main/java/com/spark/learning/util/ViewingFigures.java,2\6\26d39c04acacab78be14dfd127ad30b2e5c989b9
 h
 8part1/src/main/java/com/spark/learning/FlatMapIntro.java,c\5\c5f1418d0fef17089d0407e8fb6852d036a4d8a1
+p
+@part1/src/main/java/com/spark/learning/ReadingFromFileIntro.java,f\6\f6987b1a372d95c77eae603706e8a9e6e585b772
+d
+4part1/src/main/java/com/spark/learning/TopWords.java,c\d\cdacda6ab6b69f32dfe42c57ed52fddde6cfa244
+a
+1part1/src/main/java/com/spark/learning/Joins.java,9\b\9b969c1281f064311c681abfeba30b9ef533b186
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

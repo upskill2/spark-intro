@@ -1,31 +1,23 @@
 
-t
-java:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃÊñÕûÿÿÿÿ
-n
-java:S2293U"YReplace the type specification in this constructor call with the diamond operator ("<>").(ôŸÁC
+›
+java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(×ÛÉD8ÝòËªî1J$60aa237d-7a95-40cf-bd0d-67d51d5913a7
+œ
+java:S2293`"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¯‰ƒ8ÞòËªî1J$23f06aae-5d88-4457-bd8c-733365b5ca56
+œ
+java:S2293v"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÉýÏ§8ÞòËªî1J$7829d84c-1f72-4fc7-bb78-2ea4e6c9823a
+
+java:S1854-"ERemove this useless assignment to local variable "checkDupesRemoved".(À¿ùÿÿÿÿ8ñòËªî1J$b9c1eb0c-218d-40d3-b1e4-2e88b21c4c44
+~
+java:S1854$";Remove this useless assignment to local variable "collect".(ß–°Î8òòËªî1J$7502e8ff-d219-467e-814f-7a8a207028f9
+†
+java:S1854!">Remove this useless assignment to local variable "titlesData".(ÃàÿÂÿÿÿÿÿ8òòËªî1J$cb67201e-3ea0-4809-98d6-5f4f3e32d08b
+w
+java:S1481!"/Remove this unused "titlesData" local variable.(ÃàÿÂÿÿÿÿÿ8•óËªî1J$b34999e2-bcb5-48f8-a41a-95d40997e649
 o
-java:S2293l"YReplace the type specification in this constructor call with the diamond operator ("<>").(€§òž
-Y
-java:S1854"">Remove this useless assignment to local variable "titlesData".(ÃàÿÂÿÿÿÿÿ
-U
-java:S1854!"?Remove this useless assignment to local variable "chapterData".(„ˆ³—
-W
-java:S1854 "<Remove this useless assignment to local variable "viewData".(¿Î²£þÿÿÿÿ
-H
-java:S1481 "-Remove this unused "viewData" local variable.(¿Î²£þÿÿÿÿ
-F
-java:S1481!"0Remove this unused "chapterData" local variable.(„ˆ³—
-J
-java:S1481""/Remove this unused "titlesData" local variable.(ÃàÿÂÿÿÿÿÿ
-H
-java:S1135$"2Complete the task associated to this TODO comment.(Ù±—·
-c
-java:S57387"HRemove this call to a deprecated method, it has been marked for removal.(ÃÊñÕûÿÿÿÿ
-]
-java:S5738U"HRemove this call to a deprecated method, it has been marked for removal.(ôŸÁC
-]
-java:S5738U"HRemove this call to a deprecated method, it has been marked for removal.(ôŸÁC
-^
-java:S5738l"HRemove this call to a deprecated method, it has been marked for removal.(€§òž
-^
-java:S5738l"HRemove this call to a deprecated method, it has been marked for removal.(€§òž
+java:S1481$",Remove this unused "collect" local variable.(ß–°Î8—óËªî1J$c77652c6-434c-481d-8f08-42a319ce9043
+u
+java:S1135)"2Complete the task associated to this TODO comment.(Ù±—·8˜óËªî1J$f8ad9a64-b271-476a-a583-b74e3435f6f1
+~
+java:S1481-"6Remove this unused "checkDupesRemoved" local variable.(À¿ùÿÿÿÿ8™óËªî1J$8cc53833-6078-4eb3-9d74-c32504104b76
+i
+java:S1128"&Remove this unused import 'scala.Int'.(•Ý¯¸8Ô–Îªî1J$74689805-a86c-47da-8196-ba0950a30d1f
