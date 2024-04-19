@@ -1,23 +1,57 @@
 
 ›
-java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(×ÛÉD8İòËªî1J$60aa237d-7a95-40cf-bd0d-67d51d5913a7
-œ
-java:S2293`"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¯‰ƒ8ŞòËªî1J$23f06aae-5d88-4457-bd8c-733365b5ca56
-œ
-java:S2293v"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÉıÏ§8ŞòËªî1J$7829d84c-1f72-4fc7-bb78-2ea4e6c9823a
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(×ÛÉD8×ÛÇ­ï1J$16732941-097c-4fa0-9685-8efb7fb31a2f
+
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¯‰ƒ8ØÛÇ­ï1J$f53d08f5-172f-4446-960e-4f64ae82a700
+
+java:S2293³"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÉıÏ§8ØÛÇ­ï1J$783f1aac-f482-446c-958c-82edd222960b
+ƒ
+java:S1854m"@Remove this useless assignment to local variable "listAddnames".(¾Òı8úÛÇ­ï1J$05783f12-e4d7-40e4-9294-273319961d99
+€
+java:S1854g"=Remove this useless assignment to local variable "listAddUp".(áê°‚8úÛÇ­ï1J$cd3344d4-f26a-43e7-bd44-6cd20b6008da
+…
+java:S1854c"BRemove this useless assignment to local variable "listMapToScore".(Ä¦¸8úÛÇ­ï1J$e40a0736-e3ca-49bd-ab06-1ef4b9b7a533
+‹
+java:S1854V"CRemove this useless assignment to local variable "checkPercentage".(ÅØ“ ÿÿÿÿÿ8úÛÇ­ï1J$d16085ea-f216-402c-b971-2f619cd9df0a
+…
+java:S1854N"BRemove this useless assignment to local variable "checkOfHowMany".(™âÏÊ8ûÛÇ­ï1J$21f93f35-de25-485c-9cd6-1ac5bcf1d989
+
+java:S1854I"MRemove this useless assignment to local variable "checkTotalNumberOfCourses".(çÃ—ÿ8ûÛÇ­ï1J$0f5c9a16-772f-4c84-8c1b-f6616f10d6bc
+‰
+java:S1854A"ARemove this useless assignment to local variable "checkDropUser".(ÏÊ©üÿÿÿÿ8ûÛÇ­ï1J$45dc3914-f791-4f27-a89d-a5df14442925
+
+java:S1854<"FRemove this useless assignment to local variable "checkUsersAndViews".(ß’¼´ıÿÿÿÿ8ûÛÇ­ï1J$8bd34736-1e91-46af-b3a2-efaa8cf8d032
+€
+java:S18547"=Remove this useless assignment to local variable "checkDrop".(´ä­¨8ûÛÇ­ï1J$733ee247-c4c5-446e-bf7c-9ccca9423353
+€
+java:S18542"=Remove this useless assignment to local variable "checkJoin".(°Êùİ8Ø’á­ï1J$83af3262-735f-4397-9471-e630ab9474d1
 
-java:S1854-"ERemove this useless assignment to local variable "checkDupesRemoved".(À¿ùÿÿÿÿ8ñòËªî1J$b9c1eb0c-218d-40d3-b1e4-2e88b21c4c44
+java:S1854-"ERemove this useless assignment to local variable "checkDupesRemoved".(À¿ùÿÿÿÿ8Ô‘ã­ï1J$9b0271f4-a03e-4205-8630-89029daa0e78
 ~
-java:S1854$";Remove this useless assignment to local variable "collect".(ß–°Î8òòËªî1J$7502e8ff-d219-467e-814f-7a8a207028f9
-†
-java:S1854!">Remove this useless assignment to local variable "titlesData".(ÃàÿÂÿÿÿÿÿ8òòËªî1J$cb67201e-3ea0-4809-98d6-5f4f3e32d08b
-w
-java:S1481!"/Remove this unused "titlesData" local variable.(ÃàÿÂÿÿÿÿÿ8•óËªî1J$b34999e2-bcb5-48f8-a41a-95d40997e649
+java:S1854#";Remove this useless assignment to local variable "collect".(ß–°Î8ûÛÇ­ï1J$b5d214a3-5860-482c-9ac7-c1f4ac4ca49a
 o
-java:S1481$",Remove this unused "collect" local variable.(ß–°Î8—óËªî1J$c77652c6-434c-481d-8f08-42a319ce9043
+java:S1481#",Remove this unused "collect" local variable.(ß–°Î8¨ÜÇ­ï1J$b5c11cd8-93c3-41e2-a8e7-6c64bd944fef
 u
-java:S1135)"2Complete the task associated to this TODO comment.(Ù±—·8˜óËªî1J$f8ad9a64-b271-476a-a583-b74e3435f6f1
+java:S1135("2Complete the task associated to this TODO comment.(Ù±—·8¨ÜÇ­ï1J$518ca702-f149-495b-a216-0999fc1a32ed
 ~
-java:S1481-"6Remove this unused "checkDupesRemoved" local variable.(À¿ùÿÿÿÿ8™óËªî1J$8cc53833-6078-4eb3-9d74-c32504104b76
-i
-java:S1128"&Remove this unused import 'scala.Int'.(•İ¯¸8Ô–Îªî1J$74689805-a86c-47da-8196-ba0950a30d1f
+java:S1481-"6Remove this unused "checkDupesRemoved" local variable.(À¿ùÿÿÿÿ8¹’ã­ï1J$c6ccdafa-2a51-41dc-b2f8-07b01479e42c
+q
+java:S14812".Remove this unused "checkJoin" local variable.(°Êùİ8›“á­ï1J$be28ab20-4a7b-4aec-9ccf-9c9e3a61566f
+q
+java:S14817".Remove this unused "checkDrop" local variable.(´ä­¨8©ÜÇ­ï1J$8eb5036b-6fb3-433b-9c74-949d7553438f
+
+java:S1481<"7Remove this unused "checkUsersAndViews" local variable.(ß’¼´ıÿÿÿÿ8ªÜÇ­ï1J$1f99ca4e-b107-4636-bf2b-08aecba43139
+z
+java:S1481A"2Remove this unused "checkDropUser" local variable.(ÏÊ©üÿÿÿÿ8ªÜÇ­ï1J$d5e85bac-078c-4cc9-bcbf-36135d6c58d6
+
+java:S1481I">Remove this unused "checkTotalNumberOfCourses" local variable.(çÃ—ÿ8ªÜÇ­ï1J$10d33649-ac99-4099-9765-124d6d614537
+v
+java:S1481N"3Remove this unused "checkOfHowMany" local variable.(™âÏÊ8«ÜÇ­ï1J$ecab47ef-b8d2-472c-9dae-39493289d393
+|
+java:S1481V"4Remove this unused "checkPercentage" local variable.(ÅØ“ ÿÿÿÿÿ8¬ÜÇ­ï1J$4a00698a-99ee-42e8-bd73-fb9ff5f685ad
+v
+java:S1481c"3Remove this unused "listMapToScore" local variable.(Ä¦¸8¬ÜÇ­ï1J$da5cece1-e4df-41ab-a2cc-d7eaa7bac19a
+q
+java:S1481g".Remove this unused "listAddUp" local variable.(áê°‚8­ÜÇ­ï1J$b18642ce-6e7e-4fec-9f01-b81215a3ff74
+t
+java:S1481m"1Remove this unused "listAddnames" local variable.(¾Òı8®ÜÇ­ï1J$8d7e78f9-0a35-43dd-98f7-36fb38db33ad
