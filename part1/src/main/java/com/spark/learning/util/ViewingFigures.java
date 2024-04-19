@@ -104,7 +104,8 @@ public class ViewingFigures {
 
         //Exercise 3
         final JavaPairRDD<String, Integer> addNames = titlesData.leftOuterJoin (addUpScores)
-                .mapToPair (tuple -> new Tuple2<> (tuple._2._1, tuple._2._2.orElse (-1)));
+                .mapToPair (tuple -> new Tuple2<> (tuple._2._1, tuple._2._2.orElse (-1)))
+                .sortByKey (false);
 
         final List<Tuple2<String, Integer>> listAddnames = addNames.collect ();
 
