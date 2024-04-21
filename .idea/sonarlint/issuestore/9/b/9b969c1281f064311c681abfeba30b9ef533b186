@@ -1,0 +1,12 @@
+
+‰
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(í¤îíÿÿÿÿÿ8ôÆ‘æì1J$7f07dd10-1742-4468-86b3-88a66b1ad45a
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Êâáúÿÿÿÿ8öÆ‘æì1J$b0a1a137-9daa-4db4-b1bd-e15e7439f3da
+ƒ	java:S125;"<This block of commented-out lines of code should be removed.(‰ôÂšşÿÿÿÿ8ÑÏ–æì1J$406680c8-4549-4ff1-a9a9-11e08f0978b2
+o
+java:S1602>",Remove useless curly braces around statement(§ØÌˆ8œÇ‘æì1J$9954021a-4ca2-433e-9e19-cf164e598de3
+Š
+java:S1128"BRemove this unused import 'com.spark.learning.util.Util.isBoring'.(Á¸§×ûÿÿÿÿ8¸’Èæì1J$ce357ab5-ea10-4347-a9f7-e4bf7821b430
+p
+java:S1068"(Remove this unused "PATH" private field.(Êâáúÿÿÿÿ8Ç‘æì1J$4933551d-0d1a-420b-9d1b-3e21a701b02a

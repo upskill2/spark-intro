@@ -9,5 +9,6 @@
   <url>http://maven.apache.org</url>
   <modules>
     <module>part1</module>
+      <module>part2-spark-sql</module>
   </modules>
 </project>

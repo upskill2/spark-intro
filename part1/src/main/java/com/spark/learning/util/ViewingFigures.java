@@ -2,6 +2,7 @@ package com.spark.learning.util;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -9,6 +10,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
+import org.apache.spark.storage.StorageLevel;
 import scala.Tuple2;
 
 /**
@@ -18,7 +20,7 @@ import scala.Tuple2;
 public class ViewingFigures {
     @SuppressWarnings ("resource")
     public static void main (String[] args) {
-        System.setProperty ("hadoop.home.dir", "c:/hadoop");
+        System.setProperty ("hadoop.home.dir", "C:\\hadoop");
         Logger.getLogger ("org.apache").setLevel (Level.WARN);
 
         SparkConf conf = new SparkConf ().setAppName ("startingSpark").setMaster ("local[*]");
@@ -32,37 +34,37 @@ public class ViewingFigures {
         JavaPairRDD<Integer, String> titlesData = setUpTitlesDataRdd (sc, testMode);
 
         //warm up
-        final List<Tuple2<Integer, Integer>> collect = chapterData
+/*        final List<Tuple2<Integer, Integer>> collect = chapterData
                 .mapToPair (Tuple2::swap)
                 .mapToPair (word -> new Tuple2<> (word._1, 1))
                 .reduceByKey ((x, y) -> x + y)
-                .collect ();
+                .collect ();*/
         // TODO - over to you!
 
         //Step 1 - remove any duplicate views
         final JavaPairRDD<Integer, Integer> removingDupes = viewData.distinct ()
                 ;
-        final List<Tuple2<Integer, Integer>> checkDupesRemoved = removingDupes.collect ();
+    //    final List<Tuple2<Integer, Integer>> checkDupesRemoved = removingDupes.collect ();
 
         //Step 2 - Joining to get Course Id
         final JavaPairRDD<Integer, Tuple2<Integer, Integer>> joinChapterAndCourse = removingDupes
                 .mapToPair (Tuple2::swap).join (chapterData.distinct ());
-        final List<Tuple2<Integer, Tuple2<Integer, Integer>>> checkJoin = joinChapterAndCourse.collect ();
+  //      final List<Tuple2<Integer, Tuple2<Integer, Integer>>> checkJoin = joinChapterAndCourse.collect ();
 
         //Step 3 - Drop the Chapter Id
         final JavaPairRDD<Tuple2<Integer, Integer>, Integer> dropChapter = joinChapterAndCourse
                 .mapToPair (tuple -> new Tuple2<> (tuple._2, 1));
-        final List<Tuple2<Tuple2<Integer, Integer>, Integer>> checkDrop = dropChapter.collect ();
+     //   final List<Tuple2<Tuple2<Integer, Integer>, Integer>> checkDrop = dropChapter.collect ();
 
 
         //Step 4 - Count views
         final JavaPairRDD<Tuple2<Integer, Integer>, Integer> userAndViews = dropChapter.reduceByKey (Integer::sum);
-        final List<Tuple2<Tuple2<Integer, Integer>, Integer>> checkUsersAndViews = userAndViews.collect ();
+     //   final List<Tuple2<Tuple2<Integer, Integer>, Integer>> checkUsersAndViews = userAndViews.collect ();
 
         //Step 5 - Drop the user
         final JavaPairRDD<Integer, Integer> dropUser = userAndViews
                 .mapToPair (tuple -> new Tuple2<> (tuple._1._2, tuple._2));
-        final List<Tuple2<Integer, Integer>> checkDropUser = dropUser.collect ();
+   //     final List<Tuple2<Integer, Integer>> checkDropUser = dropUser.collect ();
 
 
         //Step 6 - Of how many chapters
@@ -70,12 +72,12 @@ public class ViewingFigures {
                 .distinct ()
                 .mapToPair (tuple -> new Tuple2<> (tuple._2, 1))
                 .reduceByKey (Integer::sum);
-        final List<Tuple2<Integer, Integer>> checkTotalNumberOfCourses = numberOfCourseinChapter.collect ();
+ ////       final List<Tuple2<Integer, Integer>> checkTotalNumberOfCourses = numberOfCourseinChapter.collect ();
 
         final JavaPairRDD<Integer, Tuple2<Integer, Integer>> ofHowManyChapters = dropUser.
                 leftOuterJoin (numberOfCourseinChapter)
                 .mapToPair (tuple -> new Tuple2<> (tuple._1, new Tuple2<> (tuple._2._1, tuple._2._2 ().orElse (1))));
-        final List<Tuple2<Integer, Tuple2<Integer, Integer>>> checkOfHowMany = ofHowManyChapters.collect ();
+  //      final List<Tuple2<Integer, Tuple2<Integer, Integer>>> checkOfHowMany = ofHowManyChapters.collect ();
 
         //Step 7  - convert to percentage
         final JavaPairRDD<Integer, Double> percenatge = ofHowManyChapters
@@ -83,7 +85,7 @@ public class ViewingFigures {
                         Double.valueOf (tuple._2._1) / Double.valueOf (tuple._2._2)
                         //(Optional.ofNullable (tuple._2._2).orElse (1)
                 ));
-        final List<Tuple2<Integer, Double>> checkPercentage = percenatge.collect ();
+   //     final List<Tuple2<Integer, Double>> checkPercentage = percenatge.collect ();
 
         //Step 8 - Convert to Scores
         final JavaPairRDD<Integer, Integer> mapToScores = percenatge.mapValues (v -> {
@@ -96,18 +98,24 @@ public class ViewingFigures {
             }
             return 0;
         });
-        final List<Tuple2<Integer, Integer>> listMapToScore = mapToScores.collect ();
+  //      final List<Tuple2<Integer, Integer>> listMapToScore = mapToScores.collect ();
 
         //Step 9 - Add up scores
         final JavaPairRDD<Integer, Integer> addUpScores = mapToScores.reduceByKey ((x, y) -> x + y);
-        final List<Tuple2<Integer, Integer>> listAddUp = addUpScores.collect ();
+  //      final List<Tuple2<Integer, Integer>> listAddUp = addUpScores.collect ();
 
         //Exercise 3
         final JavaPairRDD<String, Integer> addNames = titlesData.leftOuterJoin (addUpScores)
                 .mapToPair (tuple -> new Tuple2<> (tuple._2._1, tuple._2._2.orElse (-1)))
                 .sortByKey (false);
 
+        addNames.persist (StorageLevel.MEMORY_AND_DISK_SER ());
+
         final List<Tuple2<String, Integer>> listAddnames = addNames.collect ();
+        addNames.take (10).forEach (System.out::println);
+
+        Scanner scanner = new Scanner (System.in);
+        scanner.nextLine ();
 
         sc.close ();
     }

@@ -1,0 +1,18 @@
+
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(êßÌ²úÿÿÿÿ8ÂÀ•ì1J$2c09af8a-e5fb-4a2a-bc9a-677c16e9f39a
+‰
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(í¤îíÿÿÿÿÿ8ÅÀ•ì1J$331207a0-c0d2-45ff-b44c-487d1b0f0509
+›
+java:S1602"SRemove useless curly braces around statement and then remove useless return keyword(¾öĞşÿÿÿÿ8üÀ•ì1J$35e36296-8d7b-45b4-a113-723026104b8a
+o
+java:S1602",Remove useless curly braces around statement(â«±É8şÀ•ì1J$2d795f3a-d543-4cd9-a8ee-29467adf700b
+|
+java:S1612"9Replace this lambda with method reference 'logger::info'.(â«±É8ÿÀ•ì1J$ac4b9f31-ca9e-46e8-bf4b-f0e0f0235df9
+Š
+java:S1128"BRemove this unused import 'org.apache.spark.api.java.JavaPairRDD'.(¿«µäıÿÿÿÿ8€Á•ì1J$4ff67fef-ef4f-4ea0-9e01-c7adcf06686e
+q
+java:S1128")Remove this unused import 'scala.Tuple2'.(ÁÁóµùÿÿÿÿ8Á•ì1J$77a1642d-b1f2-4bb1-a6e3-f8f8b0f63842
+s
+java:S1128
+"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Á•ì1J$3575e4bc-cd45-41b1-b126-4f0e9d89f12b

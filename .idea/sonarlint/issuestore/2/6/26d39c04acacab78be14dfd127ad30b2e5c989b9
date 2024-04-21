@@ -1,57 +1,25 @@
 
 œ
-java:S2293€"YReplace the type specification in this constructor call with the diamond operator ("<>").(×ÛÉD8×ÛÇ­ï1J$b6d12814-83bb-4779-a0e6-b80ccff38864
+java:S2293ˆ"YReplace the type specification in this constructor call with the diamond operator ("<>").(×ÛÉD8Ö‹æ°ï1J$9ff02fc0-2639-4f5d-85bb-c2118adfdbfe
 
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¯‰ƒ8ØÛÇ­ï1J$6b77d08a-2ef1-448a-9069-d9e2591cc2d1
+java:S2293¦"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú¯‰ƒ8×‹æ°ï1J$e731b61f-b20e-48b4-9d0e-e4f15d18bda0
 
-java:S2293´"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÉıÏ§8ØÛÇ­ï1J$fd9cc45d-92df-41d0-abd8-21de9318154e
+java:S2293¼"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÉıÏ§8×‹æ°ï1J$8b59b477-fd79-4738-b7de-00632efb5f48
 ƒ
-java:S1854n"@Remove this useless assignment to local variable "listAddnames".(¾Òı8úÛÇ­ï1J$b40648f8-f007-4d6c-b553-4d265ac20563
-€
-java:S1854g"=Remove this useless assignment to local variable "listAddUp".(áê°‚8úÛÇ­ï1J$75ad1195-abb2-43e1-83fe-f85f49ae14fb
-…
-java:S1854c"BRemove this useless assignment to local variable "listMapToScore".(Ä¦¸8úÛÇ­ï1J$9fbb6c99-d695-48c4-a4d7-53d49332d0ac
-‹
-java:S1854V"CRemove this useless assignment to local variable "checkPercentage".(ÅØ“ ÿÿÿÿÿ8úÛÇ­ï1J$3e62c947-6d8e-42d1-adbc-c5447260935c
-…
-java:S1854N"BRemove this useless assignment to local variable "checkOfHowMany".(™âÏÊ8ûÛÇ­ï1J$d0b1eb4f-7082-47c7-ad5e-e04f55c045b8
-
-java:S1854I"MRemove this useless assignment to local variable "checkTotalNumberOfCourses".(çÃ—ÿ8ûÛÇ­ï1J$1ccb5498-dcb6-4f45-8e02-df56a25b1768
-‰
-java:S1854A"ARemove this useless assignment to local variable "checkDropUser".(ÏÊ©üÿÿÿÿ8ûÛÇ­ï1J$2d6bb3d6-f505-4cff-961f-b098999b4b4f
-
-java:S1854<"FRemove this useless assignment to local variable "checkUsersAndViews".(ß’¼´ıÿÿÿÿ8ûÛÇ­ï1J$115d9e89-bd2c-4899-9d6e-0220f71e1aec
-€
-java:S18547"=Remove this useless assignment to local variable "checkDrop".(´ä­¨8ûÛÇ­ï1J$f246d89e-dac2-457e-8fe8-ebf9bdadacbb
-€
-java:S18542"=Remove this useless assignment to local variable "checkJoin".(°Êùİ8Ø’á­ï1J$2b54eda8-969e-494d-b0ac-ad3affddd59c
-
-java:S1854-"ERemove this useless assignment to local variable "checkDupesRemoved".(À¿ùÿÿÿÿ8Ô‘ã­ï1J$172ccb46-9ff4-4811-acec-c55ca410c5fa
-~
-java:S1854#";Remove this useless assignment to local variable "collect".(ß–°Î8ûÛÇ­ï1J$90206cb2-5c0f-457b-afae-63bc8c9f7048
-o
-java:S1481#",Remove this unused "collect" local variable.(ß–°Î8¨ÜÇ­ï1J$f35db8a8-85bd-45d4-a490-9b5da740ce4c
+java:S1854r"@Remove this useless assignment to local variable "listAddnames".(¾Òı8€Œæ°ï1J$da71681c-c271-45ad-846f-71f3c3a90390
+ƒ	java:S125)"<This block of commented-out lines of code should be removed.(ğœòûşÿÿÿÿ8Ìáô°ï1J$a2bbf864-b185-4b1e-b902-9da3e9157a0c
 u
-java:S1135("2Complete the task associated to this TODO comment.(Ù±—·8¨ÜÇ­ï1J$adb25577-76bd-4837-8887-d5dc355efbc3
-~
-java:S1481-"6Remove this unused "checkDupesRemoved" local variable.(À¿ùÿÿÿÿ8¹’ã­ï1J$42ffd91e-177e-4250-a0d4-4b70bac3032d
-q
-java:S14812".Remove this unused "checkJoin" local variable.(°Êùİ8›“á­ï1J$924892c3-f05d-43ed-8750-3790cfd0b2bd
-q
-java:S14817".Remove this unused "checkDrop" local variable.(´ä­¨8©ÜÇ­ï1J$aad5a11a-5fc6-4308-92f3-06ed48009ee4
-
-java:S1481<"7Remove this unused "checkUsersAndViews" local variable.(ß’¼´ıÿÿÿÿ8ªÜÇ­ï1J$5f19a926-d17f-4b5d-b512-20846ecc7442
-z
-java:S1481A"2Remove this unused "checkDropUser" local variable.(ÏÊ©üÿÿÿÿ8ªÜÇ­ï1J$34eb1411-bead-46ca-943c-b16cdae20bc5
-
-java:S1481I">Remove this unused "checkTotalNumberOfCourses" local variable.(çÃ—ÿ8ªÜÇ­ï1J$07b23c94-18eb-4107-9319-9ff84edec695
-v
-java:S1481N"3Remove this unused "checkOfHowMany" local variable.(™âÏÊ8«ÜÇ­ï1J$310cba1d-2474-4458-b502-1ff4b7e804e0
-|
-java:S1481V"4Remove this unused "checkPercentage" local variable.(ÅØ“ ÿÿÿÿÿ8¬ÜÇ­ï1J$d6f01c05-6f5e-4cab-8e08-f5e91031e02b
-v
-java:S1481c"3Remove this unused "listMapToScore" local variable.(Ä¦¸8¬ÜÇ­ï1J$1817ddef-d5af-4127-9216-283fa9098e7d
-q
-java:S1481g".Remove this unused "listAddUp" local variable.(áê°‚8­ÜÇ­ï1J$9c5943d1-17e3-4b5a-b401-40525b32435c
+java:S1135*"2Complete the task associated to this TODO comment.(Ù±—·8ÀŒæ°ï1J$736b2a14-2ced-496d-a9ef-0aa8fa4d5f4b
+ƒ	java:S125/"<This block of commented-out lines of code should be removed.(İô„øÿÿÿÿ8ÁŒæ°ï1J$5262cdf2-7951-405d-a5bc-e436283f509e
+~	java:S1254"<This block of commented-out lines of code should be removed.(Ö“š†8ÁŒæ°ï1J$5ad76b46-3b28-4c85-8950-815692ed6d63
+ƒ	java:S1259"<This block of commented-out lines of code should be removed.(Á¼½ıÿÿÿÿ8ÂŒæ°ï1J$f68fe4f1-9487-4193-b0a7-9ca3b2470b8b
+ƒ	java:S125>"<This block of commented-out lines of code should be removed.(æÀÈªùÿÿÿÿ8ÂŒæ°ï1J$be45e2e6-047a-4c55-bd25-f6f6ca7464cb
+~	java:S125C"<This block of commented-out lines of code should be removed.(Í©¶Œ8ÃŒæ°ï1J$a2265527-6aa0-479b-974e-e464af9797d4
+ƒ	java:S125K"<This block of commented-out lines of code should be removed.(ıöÜìÿÿÿÿÿ8ÃŒæ°ï1J$5612f3dc-2b90-4d33-84a0-ccf2858243f1
+~	java:S125P"<This block of commented-out lines of code should be removed.(›â†¹8ÄŒæ°ï1J$f4f23ef8-ed5a-4f4d-ba2d-b3158f09efc4
+~	java:S125X"<This block of commented-out lines of code should be removed.(ÜÙüÊ8ÅŒæ°ï1J$092f33ac-d16e-4721-ae33-ebd78b07dee1
+ƒ	java:S125e"<This block of commented-out lines of code should be removed.(³‚ÖÇûÿÿÿÿ8ÆŒæ°ï1J$2edb7b40-57d7-4f92-9de9-a91baec19773
+ƒ	java:S125i"<This block of commented-out lines of code should be removed.(¹çµıÿÿÿÿ8ÆŒæ°ï1J$586d7334-9ee5-4dd4-b123-6167562b95c4
 t
-java:S1481n"1Remove this unused "listAddnames" local variable.(¾Òı8®ÜÇ­ï1J$0a637c3d-07fa-43b4-8ab1-f84861a7a704
+java:S1481r"1Remove this unused "listAddnames" local variable.(¾Òı8ÈŒæ°ï1J$ab7aa3e0-0cf0-46d4-8a12-b29f6c52ef91
+m	java:S106s"+Replace this use of System.out by a logger.(·ü®®8Ùøû°ï1J$4529c0b6-ee9b-4577-a71e-58b1998e144f
