@@ -50,3 +50,11 @@ Q.idea/sonarlint/securityhotspotstore/c/d/cdacda6ab6b69f32dfe42c57ed52fddde6cfa2
 Q.idea/sonarlint/securityhotspotstore/0/b/0b471198877673e511f20f8491f637e98acdcb51,6\4\64b1d6f79d4b0f6bf289e8b89b429fc12a22ee2c
 w
 G.idea/sonarlint/issuestore/0/b/0b471198877673e511f20f8491f637e98acdcb51,4\6\46cf6e17a18a6d46e3047fa361a7d91794849b68
+{
+Kpart2-spark-sql/src/main/java/com/spark/sql/GrouppingAndAggregationApp.java,7\1\71de9b4bef8a85ffd3ee9df0b7c4535cb62d723d
+r
+Bpart2-spark-sql/src/main/java/com/spark/sql/DateFormattingApp.java,d\4\d4908da68f74d227e94a2a2bcd5fadeb057f2d7b
+|
+Lpart2-spark-sql/src/main/java/com/spark/sql/GrouppingMultipleColumnsApp.java,b\d\bd05ff161e5fe76ce8d94d519e901585523c97c7
+€
+Ppart2-spark-sql/src/main/java/com/spark/sql/JavaGrouppingMultipleColumnsApp.java,d\3\d3db71b9c2fc1c1b7122a64ebbef317d9a8a4df9
