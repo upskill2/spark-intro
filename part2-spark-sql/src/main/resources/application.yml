@@ -1,0 +1,4 @@
+logging:
+  level:
+    ROOT: DEBUG
+    com.spark.sql.JavaGrouppingMultipleColumnsApp: DEBUG

@@ -58,3 +58,5 @@ Bpart2-spark-sql/src/main/java/com/spark/sql/DateFormattingApp.java,d\4\d4908da
 Lpart2-spark-sql/src/main/java/com/spark/sql/GrouppingMultipleColumnsApp.java,b\d\bd05ff161e5fe76ce8d94d519e901585523c97c7
 €
 Ppart2-spark-sql/src/main/java/com/spark/sql/JavaGrouppingMultipleColumnsApp.java,d\3\d3db71b9c2fc1c1b7122a64ebbef317d9a8a4df9
+n
+>part2-spark-sql/src/main/java/com/spark/sql/PivotTableApp.java,9\1\91e2dfd8c5c961c2d50aa4ceae4864d9b51aecc0

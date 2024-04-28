@@ -5,13 +5,16 @@ import org.apache.log4j.Logger;
 import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.types.DataTypes;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.apache.spark.sql.functions.col;
 import static org.apache.spark.sql.functions.date_format;
 
-public class JavaGrouppingMultipleColumnsApp {
+public class PivotTableApp {
 
-    private static final Logger log = Logger.getLogger (JavaGrouppingMultipleColumnsApp.class);
+    private static final Logger log = Logger.getLogger (PivotTableApp.class);
 
 
     public static void main (String[] args) {
@@ -25,18 +28,23 @@ public class JavaGrouppingMultipleColumnsApp {
                 .getOrCreate ();
 
 
+        Object[] months = new Object[]{"January", "February", "March", "April", "May", "June", "July", "August","Augcember", "September", "October",
+                "November", "December"};
+        List<Object> columns = Arrays.asList (months);
+
         session.read ().option ("header", "true")
                 .csv ("C:\\Users\\taras.chmeruk\\IdeaProjects\\spark-intro\\part2-spark-sql\\src\\main\\resources\\biglog.txt")
-                //        .selectExpr ("level", "date_format( datetime, 'MMMM') as month")
                 .select (
                         col ("level"),
                         date_format (col ("datetime"), "MMMM").as ("month"),
                         date_format (col ("datetime"), "M").cast (DataTypes.IntegerType).alias ("monthnum"))
-                .groupBy (col ("level"), col ("month"), col ("monthnum"))
+                .groupBy (col ("level"))
+                .pivot ("month", columns)
                 .count ()
-                .orderBy (col ("monthnum").cast ("int").desc (), col ("level").asc ())
-                .drop ("monthnum")
+                .na ()
+                .fill (0)
                 .show ();
+
 
         log.error ("-------------------------------");
         session.stop ();
