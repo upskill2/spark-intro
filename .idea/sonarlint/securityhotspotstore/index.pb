@@ -60,3 +60,11 @@ Lpart2-spark-sql/src/main/java/com/spark/sql/GrouppingMultipleColumnsApp.java,b
 Ppart2-spark-sql/src/main/java/com/spark/sql/JavaGrouppingMultipleColumnsApp.java,d\3\d3db71b9c2fc1c1b7122a64ebbef317d9a8a4df9
 n
 >part2-spark-sql/src/main/java/com/spark/sql/PivotTableApp.java,9\1\91e2dfd8c5c961c2d50aa4ceae4864d9b51aecc0
+g
+7part2-spark-sql/src/main/java/com/spark/sql/AggApp.java,1\7\179e5cba9e2096649fd2b2bfb52c41cd0b1d3ed3
+t
+Dpart2-spark-sql/src/main/java/com/spark/sql/PracticalSessionApp.java,9\3\9301bf7c3c0db7fd084b7f577f12ded48ce4d83f
+g
+7part2-spark-sql/src/main/java/com/spark/sql/UDFApp.java,f\c\fcc2b461e1b10a262a1791292404741c198ac7ff
+p
+@part2-spark-sql/src/main/java/com/spark/sql/UDFwithMonthApp.java,0\d\0d732a5809baa1ace1fdef5136698cdca0314bd2
