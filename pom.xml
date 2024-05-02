@@ -10,5 +10,6 @@
   <modules>
     <module>part1</module>
       <module>part2-spark-sql</module>
+      <module>part3-spark-ml</module>
   </modules>
 </project>

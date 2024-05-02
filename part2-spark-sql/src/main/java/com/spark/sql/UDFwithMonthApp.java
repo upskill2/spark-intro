@@ -6,6 +6,7 @@ import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.types.DataTypes;
 
 import java.text.SimpleDateFormat;
+import java.util.Scanner;
 
 public class UDFwithMonthApp {
 
@@ -37,7 +38,11 @@ public class UDFwithMonthApp {
                         "as total,  date_format(datetime, 'M')   as monthnum " +
                         "from biglog_table group by level, month, date_format(datetime, 'M') order by monthStr(month) desc, level asc")
                 .drop ("monthnum")
-                .show (10);
+                .explain ();
+                //.show (10);
+
+        Scanner scanner = new Scanner (System.in);
+        scanner.nextLine ();
 
         session.stop ();
     }

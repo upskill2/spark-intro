@@ -68,3 +68,13 @@ g
 7part2-spark-sql/src/main/java/com/spark/sql/UDFApp.java,f\c\fcc2b461e1b10a262a1791292404741c198ac7ff
 p
 @part2-spark-sql/src/main/java/com/spark/sql/UDFwithMonthApp.java,0\d\0d732a5809baa1ace1fdef5136698cdca0314bd2
+F
+part3-spark-ml/pom.xml,4\2\4221be959040500a03a47f3f693d57baa95b25d5
+m
+=part3-spark-ml/src/main/java/com/spark/ml/GymCompetitors.java,1\5\151f422fd856be53619316d548c55a79c632d85a
+q
+Apart3-spark-ml/src/main/java/com/spark/ml/HousePriceAnalysis.java,0\1\017dcb4a2d22781fb301c8f7da414d7070f57955
+o
+?part3-spark-ml/src/main/java/com/spark/ml/HousePriceFields.java,0\6\0604ae1fd83e341b2c5ef87bd3b4b6bafb3f6a7b
+t
+Dpart3-spark-ml/src/main/java/com/spark/ml/MovieViewersCaseStudy.java,2\9\2985f265120f4a8b0fcc64819effca3d51e4b542

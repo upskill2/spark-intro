@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/part1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part2-spark-sql/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/part2-spark-sql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part3-spark-ml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/part3-spark-ml/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
