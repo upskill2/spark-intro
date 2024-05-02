@@ -16,15 +16,11 @@ import org.apache.spark.ml.tuning.TrainValidationSplitModel;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-import scala.collection.Seq;
-
-import java.util.HashSet;
-import java.util.Set;
 
 import static org.apache.spark.sql.functions.col;
 import static org.apache.spark.sql.functions.when;
 
-public class MovieViewersCaseStudy {
+public class LogisticModelMovieViewersCaseStudy {
 
     public static void main (String[] args) {
 
