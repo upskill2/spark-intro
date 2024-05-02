@@ -3,6 +3,7 @@
   <component name="SonarLintProjectSettings">
     <option name="moduleMapping">
       <map>
+        <entry key="part1-spark-rdd" value="part1" />
         <entry key="part2-spark-sql" value="part2-spqrk-sql" />
       </map>
     </option>

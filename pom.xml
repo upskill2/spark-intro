@@ -8,7 +8,7 @@
   <name>Archetype - spark-intro</name>
   <url>http://maven.apache.org</url>
   <modules>
-    <module>part1</module>
+    <module>part1-spark-rdd</module>
       <module>part2-spark-sql</module>
       <module>part3-spark-ml</module>
       <module>part3-streaming</module>
