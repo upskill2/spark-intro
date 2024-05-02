@@ -78,3 +78,7 @@ o
 ?part3-spark-ml/src/main/java/com/spark/ml/HousePriceFields.java,0\6\0604ae1fd83e341b2c5ef87bd3b4b6bafb3f6a7b
 t
 Dpart3-spark-ml/src/main/java/com/spark/ml/MovieViewersCaseStudy.java,2\9\2985f265120f4a8b0fcc64819effca3d51e4b542
+Å
+Qpart3-spark-ml/src/main/java/com/spark/ml/LogisticModelMovieViewersCaseStudy.java,5\d\5de70b5dd28787297ad0ae73b3079401104c406c
+q
+Apart3-spark-ml/src/main/java/com/spark/ml/DecisionTreeTrials.java,f\a\faef279eac47b22947d1ed9bd40d9d31950f9703

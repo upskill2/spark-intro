@@ -3,6 +3,9 @@ package com.spark.ml;
 import org.apache.spark.ml.Pipeline;
 import org.apache.spark.ml.PipelineModel;
 import org.apache.spark.ml.PipelineStage;
+import org.apache.spark.ml.classification.LogisticRegression;
+import org.apache.spark.ml.classification.LogisticRegressionModel;
+import org.apache.spark.ml.classification.LogisticRegressionSummary;
 import org.apache.spark.ml.evaluation.RegressionEvaluator;
 import org.apache.spark.ml.feature.OneHotEncoder;
 import org.apache.spark.ml.feature.StringIndexer;
@@ -46,6 +49,7 @@ public class LogisticModelMovieViewersCaseStudy {
                 .withColumn ("all_time_views", when (col ("all_time_views").isNull (), 0).otherwise (col ("all_time_views")))
                 .withColumn ("last_month_views", when (col ("last_month_views").isNull (), 0).otherwise (col ("last_month_views")))
                 .withColumn ("next_month_views", when (col ("next_month_views").isNull (), 0).otherwise (col ("next_month_views")))
+                .withColumn ("next_month_views", when (col ("next_month_views").$greater (0), 0).otherwise (1))
                 .drop ("observation_date", "is_cancelled")
                 .withColumnRenamed ("next_month_views", "label");
 
@@ -63,15 +67,15 @@ public class LogisticModelMovieViewersCaseStudy {
                 .setOutputCol ("features");
 
 
-        LinearRegression linearRegression = new LinearRegression ();
+        LogisticRegression logisticRegression = new LogisticRegression ();
         ParamGridBuilder paramGridBuilder = new ParamGridBuilder ();
         ParamMap[] paramMap = paramGridBuilder
-                .addGrid (linearRegression.regParam (), new double[]{0.01, 0.1, 0.5, 0.7, 0.9})
-                .addGrid (linearRegression.elasticNetParam (), new double[]{0, 0.5, 1})
+                .addGrid (logisticRegression.regParam (), new double[]{0.01, 0.1, 0.5, 0.7, 0.9})
+                .addGrid (logisticRegression.elasticNetParam (), new double[]{0, 0.5, 1})
                 .build ();
 
         TrainValidationSplit trainValidationSplit = new TrainValidationSplit ()
-                .setEstimator (linearRegression)
+                .setEstimator (logisticRegression)
                 .setEvaluator (new RegressionEvaluator ()
                         .setMetricName ("r2"))
                 .setEstimatorParamMaps (paramMap)
@@ -80,15 +84,19 @@ public class LogisticModelMovieViewersCaseStudy {
         Pipeline pipeline = new Pipeline ()
                 .setStages (new PipelineStage[]{stringIndexer, oneHotEncoder, vectorAssembler, trainValidationSplit});
 
-        final Dataset<Row>[] dataSplits = csvData.randomSplit (new double[]{0.9, 0.1});
-        final Dataset<Row> trainingAndTestData = dataSplits[0];
-        final Dataset<Row> holdOutData = dataSplits[1];
+         Dataset<Row>[] dataSplits = csvData.randomSplit (new double[]{0.9, 0.1});
+         Dataset<Row> trainingAndTestData = dataSplits[0];
+         Dataset<Row> holdOutData = dataSplits[1];
 
         PipelineModel pipelineModel = pipeline.fit (trainingAndTestData);
         TrainValidationSplitModel trainModel = (TrainValidationSplitModel) pipelineModel.stages ()[3];
-        LinearRegressionModel model = (LinearRegressionModel) trainModel.bestModel ();
+        LogisticRegressionModel model = (LogisticRegressionModel) trainModel.bestModel ();
 
-        System.out.println ("R2 " + model.summary ().r2 () + " RMSE " + model.summary ().rootMeanSquaredError ());
+        System.out.println ("Accuracy " + model.summary ().accuracy ());
+
+        LogisticRegressionSummary summary = model.evaluate (holdOutData);
+        double evaluation = summary.truePositiveRateByLabel ()[1] / (summary.falsePositiveRateByLabel ()[0] + summary.truePositiveRateByLabel ()[1]);
+        System.out.println ("Evaluation " + evaluation);
 
         Dataset<Row> holdOutResults = pipelineModel.transform (holdOutData);
         holdOutResults.show ();
