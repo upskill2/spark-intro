@@ -1,9 +1,0 @@
-
-–
-java:S1602"SRemove useless curly braces around statement and then remove useless return keyword(Øåå8‡¥òŠì1J$48a6a9df-5442-4e78-b357-0f527ced8b38
-t
-java:S1602#",Remove useless curly braces around statement(É©Àœúÿÿÿÿ8ÈéûŠì1J$aa4f3983-ed68-4acb-bd3e-945048659fd7
-
-java:S1612#"9Replace this lambda with method reference 'logger::info'.(É©Àœúÿÿÿÿ8ÉéûŠì1J$60361a50-6e05-4d6f-99b7-b9ea6ca4aa4c
-}
-java:S1128":Remove this unused import 'org.apache.spark.SparkContext'.(ÁÜ¸Ô8ê€úŠì1J$afe35303-7848-48ad-a147-738d3f14ec80

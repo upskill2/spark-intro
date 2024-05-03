@@ -20,8 +20,6 @@ public class GrouppingAndAggregationApp {
 
     public static void main (String[] args) {
         System.setProperty ("hadoop.home.dir", "c:/hadoop");
-        //    Logger.getLogger ("org.apache").setLevel (Level.INFO);
-
 
         SparkSession session = SparkSession.builder ()
                 .appName ("Students Demo App")
