@@ -25,44 +25,12 @@ services:
     depends_on:
       - zookeeper
 
-  kafka2:
-    image: confluentinc/cp-kafka:${CONFLUENT_PLATFORM_VERSION}
-    hostname: kafka2
-    container_name: kafka2
-    ports:
-      - "9093:9093"
-    environment:
-      KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://kafka2:19093,LISTENER_DOCKER_EXTERNAL://localhost:9093
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER_INTERNAL:PLAINTEXT,LISTENER_DOCKER_EXTERNAL:PLAINTEXT
-      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_DOCKER_INTERNAL
-      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
-      KAFKA_BROKER_ID: 2
-    depends_on:
-      - zookeeper
-
-  kafka3:
-    image: confluentinc/cp-kafka:${CONFLUENT_PLATFORM_VERSION}
-    hostname: kafka3
-    container_name: kafka3
-    ports:
-      - "9094:9094"
-    environment:
-      KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://kafka3:19094,LISTENER_DOCKER_EXTERNAL://localhost:9094
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: LISTENER_DOCKER_INTERNAL:PLAINTEXT,LISTENER_DOCKER_EXTERNAL:PLAINTEXT
-      KAFKA_INTER_BROKER_LISTENER_NAME: LISTENER_DOCKER_INTERNAL
-      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
-      KAFKA_BROKER_ID: 3
-    depends_on:
-      - zookeeper
-
   schema-registry:
     container_name: schema-registry
     image: confluentinc/cp-schema-registry:${CONFLUENT_PLATFORM_VERSION}
     depends_on:
       - zookeeper
       - kafka1
-      - kafka2
-      - kafka3
     environment:
       SCHEMA_REGISTRY_HOST_NAME: schema-registry
       SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: 'PLAINTEXT://kafka1:19092'
@@ -90,6 +58,4 @@ services:
       - "8000:8080"
     depends_on:
       - kafka1
-      - kafka2
-      - kafka3
       - schema-registry

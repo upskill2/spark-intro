@@ -17,6 +17,8 @@ public class StructuredStreamingViewing {
             //    .config ("spark.sql.warehouse.dir", "file:///c:/tmp1/")
                 .getOrCreate ();
 
+        spark.conf ().set ("spark.sql.shuffle.partitions", "5");
+
         spark.readStream ()
                 .format ("kafka")
                 .option ("kafka.bootstrap.servers", "localhost:9092")
@@ -29,10 +31,11 @@ public class StructuredStreamingViewing {
                 .start ()
                 .awaitTermination ();*/
 
-        spark.sql ("SELECT value FROM viewrecords_figures")
+        spark.sql ("SELECT window, cast (value as string) as course_name, count(*)" +
+                        " FROM viewrecords_figures group by window (timestamp, '30 seconds'), course_name")
                 .writeStream ()
                 .format ("console")
-                .outputMode (OutputMode.Append ())
+                .outputMode (OutputMode.Complete ())
                 .start ()
                 .awaitTermination ();
 
