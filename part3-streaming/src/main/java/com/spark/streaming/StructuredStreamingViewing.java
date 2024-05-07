@@ -9,12 +9,12 @@ import java.util.concurrent.TimeoutException;
 public class StructuredStreamingViewing {
 
     public static void main (String[] args) throws TimeoutException, StreamingQueryException {
-        System.setProperty ("hadoop.home.dir", "c:/hadoop");
+     //   System.setProperty ("hadoop.home.dir", "c:/hadoop");
 
         SparkSession spark = SparkSession.builder ()
                 .appName ("StructuredStreamingViewing")
                 .master ("local[*]")
-                .config ("spark.sql.warehouse.dir", "file:///c:/tmp1/")
+            //    .config ("spark.sql.warehouse.dir", "file:///c:/tmp1/")
                 .getOrCreate ();
 
         spark.readStream ()

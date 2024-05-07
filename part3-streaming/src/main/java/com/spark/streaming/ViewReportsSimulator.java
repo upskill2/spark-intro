@@ -30,7 +30,7 @@ public class ViewReportsSimulator
 		// by 24x to give a one hour simulation....
 		Producer<String, String> producer = new KafkaProducer<>(props);
 
-		Scanner sc = new Scanner(new FileReader("C:\\Users\\taras.chmeruk\\IdeaProjects\\spark-intro\\part3-streaming\\src\\main\\resources\\final_viewing_figures"));
+		Scanner sc = new Scanner(new FileReader("/home/tc/IdeaProjects/spark-intro/part3-streaming/src/main/resources/final_viewing_figures"));
 		int milliseconds = 0;
 		while (sc.hasNextLine())
 		{
